@@ -12,4 +12,22 @@ document.querySelectorAll("p").textContent = "How's the Josh?";
 
 //2.Go to youtube. Open any video. Add a button to the page using JS. On click of the button, the video playback speed should change to 10x
 
+// var button = document.createElement("button");
+// button.innerHTML = "Change Playback Speed";
+// button.style.color = "white";
+// button.onclick = function() {
+//     var video = document.querySelector("video");
+//     if (video) {
+//         video.playbackRate = 10;
+//     }
+// };
+// document.body.appendChild(button);
 
+//or
+
+btn = document.createElement("button")
+btn.innerHTML = "Changeto10X"
+document.getElementById("owner").appendChild(btn)
+btn.addEventListener('click', function () {
+    document.querySelector('video').playbackRate = 10
+})
